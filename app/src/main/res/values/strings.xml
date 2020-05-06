@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Fitflow</string>
+    <string name="title_training">Training</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_me">Me</string>
+    <string name="what_is_hard_today">What is hard today\nwill be your warm-up one day</string>
+    <string name="_300_sit_ups">300 SIT-UPS</string>
+    <string name="_100_push_ups">100 PUSH-UPS</string>
+    <string name="full_body">Full Body</string>
+    <string name="push_ups">100 Push-ups</string>
+    <string name="pull_ups">50 Pull-ups</string>
+    <string name="sit_ups">300 Sit-ups</string>
+    <string name="squats">300 Squats</string>
+    <string name="title_activity_situps">SitupsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="apply">Apply</string>
+    <string name="go_to_training">go to training</string>
+    <string name="training_day_1">Training day 1</string>
+    <string name="training_day_2">Training day 2</string>
+    <string name="training_day_3">Training day 3</string>
+</resources>

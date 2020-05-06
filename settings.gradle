@@ -1,0 +1,2 @@
+rootProject.name='Fitflow'
+include ':app'
