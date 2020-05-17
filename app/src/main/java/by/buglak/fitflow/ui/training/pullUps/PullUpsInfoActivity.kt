@@ -1,15 +1,13 @@
-package by.buglak.fitflow.ui.training.situps
+package by.buglak.fitflow.ui.training.pullUps
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import by.buglak.fitflow.R
 
-class SitupsActivity : AppCompatActivity() {
+class PullUpsInfoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_situps)
-
-
+        setContentView(R.layout.activity_pull_ups_info)
     }
 }

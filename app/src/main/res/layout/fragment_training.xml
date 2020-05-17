@@ -31,126 +31,131 @@
         tools:layout_editor_absoluteX="-145dp"
         android:layout_marginTop="30dp">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trainingRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"/>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="17dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:orientation="vertical">-->
 
-                <ImageButton
-                    android:id="@+id/fullBodyBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/full_body"
-                    android:scaleType="centerCrop" />
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                android:layout_marginBottom="17dp">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:fontFamily="@font/overlock_bold"
-                    android:text="@string/full_body"
-                    android:textColor="#FFF"
-                    android:textSize="32sp" />
-            </RelativeLayout>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/fullBodyBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/full_body"-->
+<!--                    android:scaleType="centerCrop" />-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="17dp">
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:fontFamily="@font/overlock_bold"-->
+<!--                    android:text="@string/full_body"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textSize="32sp" />-->
+<!--            </RelativeLayout>-->
 
-                <ImageButton
-                    android:id="@+id/situpsBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/situps"
-                    android:scaleType="centerCrop"
-                    />
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                android:layout_marginBottom="17dp">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/sit_ups"
-                    android:textColor="#FFF"
-                    android:textSize="32sp"
-                    android:fontFamily="@font/overlock_bold"/>
-            </RelativeLayout>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/situpsBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/situps"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    />-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="17dp">
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="@string/sit_ups"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textSize="32sp"-->
+<!--                    android:fontFamily="@font/overlock_bold"/>-->
+<!--            </RelativeLayout>-->
 
-                <ImageButton
-                    android:id="@+id/pushupsBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/pushups"
-                    android:scaleType="centerCrop" />
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                android:layout_marginBottom="17dp">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/push_ups"
-                    android:textColor="#FFF"
-                    android:textSize="32sp"
-                    android:fontFamily="@font/overlock_bold"/>
-            </RelativeLayout>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/pushupsBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/pushups"-->
+<!--                    android:scaleType="centerCrop" />-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="17dp">
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="@string/push_ups"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textSize="32sp"-->
+<!--                    android:fontFamily="@font/overlock_bold"/>-->
+<!--            </RelativeLayout>-->
 
-                <ImageButton
-                    android:id="@+id/squatsBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/squats"
-                    android:scaleType="centerCrop" />
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                android:layout_marginBottom="17dp">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/squats"
-                    android:textColor="#FFF"
-                    android:textSize="32sp"
-                    android:fontFamily="@font/overlock_bold"/>
-            </RelativeLayout>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/squatsBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/squats"-->
+<!--                    android:scaleType="centerCrop" />-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="17dp">
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="@string/squats"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textSize="32sp"-->
+<!--                    android:fontFamily="@font/overlock_bold"/>-->
+<!--            </RelativeLayout>-->
 
-                <ImageButton
-                    android:id="@+id/pullupsBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/pullups"
-                    android:scaleType="centerCrop" />
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                android:layout_marginBottom="17dp">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/pull_ups"
-                    android:textColor="#FFF"
-                    android:textSize="32sp"
-                    android:fontFamily="@font/overlock_bold"/>
-            </RelativeLayout>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/pullupsBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/pullups"-->
+<!--                    android:scaleType="centerCrop" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="@string/pull_ups"-->
+<!--                    android:textColor="#FFF"-->
+<!--                    android:textSize="32sp"-->
+<!--                    android:fontFamily="@font/overlock_bold"/>-->
+<!--            </RelativeLayout>-->
 
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
     </ScrollView>
 
 

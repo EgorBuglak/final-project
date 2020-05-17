@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.training.situps.SitupsActivity"></activity>
+        <activity android:name=".ui.training.squats.SquatsInfoActivity"></activity>
+        <activity android:name=".ui.training.pushUps.PushUpsInfoActivity" />
+        <activity android:name=".ui.training.pullUps.PullUpsInfoActivity" />
+        <activity android:name=".ui.training.fullBody.FullBodyInfoActivity" />
+        <activity android:name=".ui.training.situps.SitupsActivity" />
         <activity android:name=".ui.me.ReminderActivity" />
         <activity android:name=".ui.me.PrivacyActivity" />
         <activity android:name=".ui.me.DisclaimerActivity" />
@@ -24,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.training.situps.SitupCollection" />
 
         <receiver android:name=".ui.me.ReminderReceiver" />
 
