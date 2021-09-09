@@ -25,10 +25,14 @@ class MeFragment : Fragment() {
         notificationsViewModel =
                 ViewModelProviders.of(this).get(MeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_me, container, false)
+        val userInfo: TextView = root.findViewById(R.id.userInfoMe)
         val training: TextView = root.findViewById(R.id.training_me)
         val reminder: TextView = root.findViewById(R.id.reminder_me)
         val disclaimer: TextView = root.findViewById(R.id.disclaimer_me)
         val privacy: TextView = root.findViewById(R.id.privacy_me)
+        notificationsViewModel.text_user.observe(viewLifecycleOwner, Observer {
+            userInfo.text = it
+        })
         notificationsViewModel.text_training.observe(viewLifecycleOwner, Observer {
             training.text = it
         })
@@ -47,6 +51,10 @@ class MeFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+        userInfoMe.setOnClickListener{
+            val intent = Intent(this.context, UserInfoActivity::class.java)
+            startActivity(intent)
+        }
         training_me.setOnClickListener {
             val intent = Intent(this.context, MainActivity::class.java)
             startActivity(intent)

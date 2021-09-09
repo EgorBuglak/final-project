@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#303846"
-    tools:context=".ui.training.situps.SitupsInfoActivity">
+    android:background="#272A36"
+    tools:context=".ui.training.day.TrainingDayActivity">
 
     <RelativeLayout
-        android:id="@+id/situpsTopImage"
+        android:id="@+id/topImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/dayImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/goBackBtn"
+            android:id="@+id/trainingDayGoBackBtn"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,51 +30,79 @@
             app:iconTint="#E3E0E0" />
 
         <TextView
-            android:id="@+id/trainingTitle"
+            android:id="@+id/dayTrainingTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="28sp"
+            android:textSize="36sp"
             android:text="@string/sit_ups"
             android:textColor="#D6D6D6"
+            android:fontFamily="@font/overlock_bold"
             android:layout_centerVertical="true"
             android:layout_marginStart="40dp"/>
 
         <ImageView
-            android:id="@+id/easyPoint"
+            android:id="@+id/dayEasyPoint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/trainingTitle"
+            android:layout_below="@+id/dayTrainingTitle"
             android:layout_marginBottom="119dp"
             android:layout_marginStart="40dp"/>
 
         <ImageView
-            android:id="@+id/normalPoint"
+            android:id="@+id/dayNormalPoint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/trainingTitle"
-            android:layout_toEndOf="@+id/easyPoint" />
+            android:layout_below="@+id/dayTrainingTitle"
+            android:layout_toEndOf="@+id/dayEasyPoint" />
 
         <ImageView
-            android:id="@+id/hardPoint"
+            android:id="@+id/dayHardPoint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/trainingTitle"
-            android:layout_toEndOf="@+id/normalPoint" />
+            android:layout_below="@+id/dayTrainingTitle"
+            android:layout_toEndOf="@+id/dayNormalPoint" />
         <TextView
-            android:id="@+id/situpsTextMode"
+            android:id="@+id/trainingDayTextMode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textColor="#D6D6D6"
-            android:layout_below="@+id/trainingTitle"
-            android:layout_toEndOf="@+id/hardPoint"/>
+            android:fontFamily="@font/overlock_bold"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/dayTrainingTitle"
+            android:layout_toEndOf="@+id/dayHardPoint"/>
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/trainingDayTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/topImage"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#D6D6D6" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/pagerSitups"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dayRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/trainingDayStartBtn"
+        app:layout_constraintTop_toBottomOf="@+id/trainingDayTotal" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/trainingDayStartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/start"
+        android:textSize="18sp"
+        android:fontFamily="@font/overlock_bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/situpsTopImage" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cornerRadius="0dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

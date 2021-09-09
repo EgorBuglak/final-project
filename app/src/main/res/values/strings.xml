@@ -21,4 +21,11 @@
     <string name="training_day_2">Training day 2</string>
     <string name="training_day_3">Training day 3</string>
     <string name="sit_up">SIT-UPS</string>
+    <string name="start">Start</string>
+    <string name="done">Done</string>
+    <string name="stop">Stop</string>
+    <string name="workout_completed">WORKOUT COMPLETED</string>
+    <string name="min">MIN</string>
+    <string name="kcal">KCAL</string>
+    <string name="your_muscles_need_to_get_some_rest">Your muscles need to get some rest</string>
 </resources>

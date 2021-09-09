@@ -6,6 +6,9 @@ import androidx.lifecycle.ViewModel
 
 class MeViewModel : ViewModel() {
 
+    private val _text_user = MutableLiveData<String>().apply {
+        value = "My info"
+    }
     private val _text_training = MutableLiveData<String>().apply {
         value = "Training plans"
     }
@@ -18,6 +21,7 @@ class MeViewModel : ViewModel() {
     private val _text_privacy = MutableLiveData<String>().apply {
         value = "Privacy policy"
     }
+    val text_user: LiveData<String> = _text_user
     val text_training: LiveData<String> = _text_training
     val text_reminder: LiveData<String> = _text_reminder
     val text_disclaimer: LiveData<String> = _text_disclaimer

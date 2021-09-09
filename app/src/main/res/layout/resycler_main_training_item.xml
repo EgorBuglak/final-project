@@ -23,4 +23,39 @@
         android:text="@string/full_body"
         android:textColor="#FFF"
         android:textSize="32sp" />
+
+    <ProgressBar
+        android:id="@+id/mainProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:theme="@style/ProgressBar"
+        android:layout_below="@+id/trainingBtnText"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:max="100"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainProgressBar">
+        <TextView
+            android:id="@+id/trainingBtnLastTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overlock_bold"
+            android:layout_alignParentStart="true"
+            android:text="kgjhfjg"
+            android:textColor="#55AE83"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/trainingBtnPers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/overlock_bold"
+            android:text="@string/full_body"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
 </RelativeLayout>

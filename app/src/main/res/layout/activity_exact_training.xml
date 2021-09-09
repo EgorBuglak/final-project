@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272A36"
+    tools:context=".ui.training.trainingDay.ExactTrainingActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/exactGoBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/go_back_img" />
+
+        <TextView
+            android:id="@+id/exactType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Type"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="28sp"
+            app:layout_constraintTop_toBottomOf="@+id/exactGoBack" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/exactToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:text="to do"
+        android:textColor="#9C9A9A"
+        app:layout_constraintTop_toBottomOf="@+id/topLane"/>
+
+    <ImageView
+        android:id="@+id/topAnim"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exactToDo" />
+
+    <RelativeLayout
+        android:id="@+id/bottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/topAnim"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/exactCircle"
+            android:layout_width="224dp"
+            android:layout_height="224dp"
+            android:layout_toEndOf="@+id/decrease"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/circle_item">
+
+            <TextView
+                android:id="@+id/exactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/rambla"
+                android:text="12"
+                android:textColor="#55AE83"
+                android:textSize="132sp" />
+
+            <TextView
+                android:id="@+id/exactDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exactNumber"
+                android:text="@string/done"
+                android:textColor="#55AE83"
+                android:textSize="26sp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/hind_light"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/decrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/exactCircle"
+            android:src="@drawable/decrease" />
+
+        <ImageView
+            android:id="@+id/increase"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/exactCircle"
+            android:layout_toEndOf="@+id/exactCircle"
+            android:src="@drawable/increase" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLane"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomFragment"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/bottomAnim"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            />
+        <TextView
+            android:id="@+id/bottomNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tyu"
+            android:textColor="#7A7979"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/bottomAnim"/>
+        <TextView
+            android:id="@+id/bottomRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yuii"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_toEndOf="@+id/bottomAnim"
+            android:layout_below="@+id/bottomNext"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

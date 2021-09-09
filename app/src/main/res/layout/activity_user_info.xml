@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.me.UserInfoActivity"
+    android:background="#1A1C1E">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/userInfoBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"/>
+
+    <RelativeLayout
+        android:id="@+id/genderRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userInfoBackBtn"
+        >
+        <TextView
+            android:id="@+id/genderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:gravity="start"
+            android:textColor="#FFF"
+            android:layout_alignParentStart="true"/>
+
+        <ToggleButton
+            android:id="@+id/genderToggle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:textOff="Male"
+            android:textOn="Female" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/metricRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/genderRelative"
+        >
+        <TextView
+            android:id="@+id/metricText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metric system"
+            android:gravity="start"
+            android:textColor="#FFF"
+            android:layout_alignParentStart="true"/>
+
+        <ToggleButton
+            android:id="@+id/metricToggle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:textOff="kg/sm"
+            android:textOn="pd/ft" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weightRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/metricRelative">
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textColor="#FFF"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id="@+id/weightValue"
+            android:layout_width="150dp"
+            android:textColorHint="#FFF"
+            android:textColor="#FFF"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heightRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/weightRelative">
+        <TextView
+            android:id="@+id/heightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textColor="#FFF"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id="@+id/heightValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColorHint="#FFF"
+            android:textColor="#FFF"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/userApplyBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="APPLY"
+        android:textSize="32sp"
+        android:textColor="#111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightRelative" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
